@@ -1,0 +1,18 @@
+<mvc:View
+controllerName="gss.ui.demo.controller.InvoiceList"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc">
+   <List
+      headerText="{i18n>invoiceListTitle}"
+      class="sapUiResponsiveMargin"
+      width="auto"
+      items="{invoice>/Invoices}" >
+      <items>
+         <ObjectListItem
+         
+          	press="detailactive"
+            title="{invoice>ProductName}"
+           />
+      </items>
+   </List>
+</mvc:View>

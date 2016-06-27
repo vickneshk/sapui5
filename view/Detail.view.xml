@@ -1,0 +1,25 @@
+<mvc:View
+	controllerName="gss.ui.demo.controller.Detail"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc" >
+	<App>
+	<Pages>
+	<Page
+		id="page"
+		title="i18n>DetailPage"
+		showNavButton="true"
+		navButtonPress="handleNavButtonPress" >
+		<Content>
+			<Text text="{ProductName}" />
+			<Text text="{Quantity}" />
+			<Text text="{ExtendedPrice}" />
+			<Text text="{ShipperName}" />
+			<Text text="{Status}" />
+			<Text text="{ShipperDate}" />
+		</Content>
+	</Page>
+	</Pages>
+	</App>
+</mvc:View>
+
+
