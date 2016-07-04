@@ -1,0 +1,27 @@
+<mvc:View
+controllerName="gss.ui.demo.controller.InvoiceList"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc">
+   <List
+      headerText="{i18n>invoiceListTitle}"
+      class="sapUiResponsiveMargin"
+      width="auto"
+      items="{invoice>/Invoices}" >
+      <items>
+        	<ObjectListItem
+        	type="Active"
+          	press=".detailactive"
+            title="{invoice>ProductName}"
+            number="{invoice>Quantity} {i18n>unit}"
+            numberState="{= ${invoice>ExtendedPrice} > 8 ? 'Error' : 'Success' }"
+           >
+        		<firstStatus>
+					<ObjectStatus text="{
+						path: 'invoice>Status',
+						formatter: '.formatter.statusText'
+					}"/>
+				</firstStatus>
+				</ObjectListItem>
+      </items>
+   </List>
+</mvc:View>
