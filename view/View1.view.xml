@@ -1,0 +1,17 @@
+<mvc:View controllerName="gss.ui.demo.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<SplitApp class="nyAppDemoWT" id="app" initialDetail="Empty" initialMaster="InvoiceList">
+		
+	<masterPages>
+					<mvc:XMLView viewName="gss.ui.demo.view.InvoiceList"/>
+						</masterPages>
+						<detailPages>
+						
+				
+						
+						
+					<mvc:XMLView viewName="gss.ui.demo.view.Detail"/>
+						
+						</detailPages>
+			
+	</SplitApp>
+</mvc:View>
